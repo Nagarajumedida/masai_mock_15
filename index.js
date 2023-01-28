@@ -17,7 +17,7 @@ app.use(cors({
 }))
 
 app.get('/', (req, res) => {
-    res.send("Welcome to Bug tracker APP")
+    res.send("Welcome to BMI Calculator APP")
 })
 
 app.post("/signup", async (req, res) => {
