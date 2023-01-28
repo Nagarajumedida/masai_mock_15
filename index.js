@@ -63,7 +63,7 @@ app.post("/login", async (req, res) => {
 
 app.post("/bmi",async(req,res)=>{
     const{height,weight} = req.body
-    let ans = weight/(height/100)
+    let ans = weight/((height**2)/100)
 
     res.send(ans.toString())
 })
